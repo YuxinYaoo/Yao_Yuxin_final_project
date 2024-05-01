@@ -1,0 +1,298 @@
+zip_code,place_name,population
+90001,"Los Angeles (South Los Angeles), Florence-Graham",57652
+90002,"Los Angeles (Southeast Los Angeles, Watts)",53108
+90003,"Los Angeles (South Los Angeles, Southeast Los Angeles)",75024
+90004,"Los Angeles (Hancock Park, Rampart Village, Virgil Village, Wilshire Center, Windsor Square)",58833
+90005,"Los Angeles (Hancock Park, Koreatown, Wilshire Center, Wilshire Park, Windsor Square)",37754
+90006,"Los Angeles (Byzantine-Latino Quarter, Harvard Heights, Koreatown, Pico Heights)",56628
+90007,"Los Angeles (Southeast Los Angeles, Univerity Park)",41004
+90008,"Los Angeles (Baldwin Hills, Crenshaw, Leimert Park)",33076
+90010,"Los Angeles (Hancock Park, Wilshire Center, Windsor Square)",4185
+90011,Los Angeles (Southeast Los Angeles),106042
+90012,"Los Angeles (Downtown Civic Center, Chinatown, Arts District, Bunker Hill, Historic Core, Little Tokyo)",38430
+90013,"Los Angeles (Downtown Central, Downtown Fashion District)",14587
+90014,"Los Angeles (Downtown Historic Core, Arts District)",9273
+90015,"Los Angeles (Dowtown Fashion District, South Park-South)",25554
+90016,Los Angeles (West Adams),47309
+90017,"Los Angeles (Downtown Bunker Hill, City West, South Park-North)",28754
+90018,"Los Angeles (Jefferson Park, Leimert Park)",49898
+90019,"Los Angeles (Arlington Heights, Country Club Park, Mid-City)",59410
+90020,"Los Angeles (Hancock Park, Western Wilton, Wilshire Center, Windsor Square)",38400
+90021,"Los Angeles (Downtown Fashion District, Downtown Southeast)",2781
+90022,East Los Angeles,64147
+90023,"Commerce, East Los Angeles",44558
+90024,Los Angeles (Westwood),50392
+90025,"Los Angeles (Sawtelle, West Los Angeles)",44429
+90026,"Los Angeles (Echo Park, Silver Lake)",64769
+90027,"Los Angeles (Griffith Park, Hollywood, Los Feliz)",45764
+90028,Los Angeles (Hollywood),30982
+90029,Los Angeles (East Hollywood),34649
+90031,"Los Angeles (Lincoln Heights, Montecito Heights)",37457
+90032,"Los Angeles (El Sereno, Monterey Hills, University Hills)",44881
+90033,Los Angeles (Boyle Heights),47655
+90034,Los Angeles (Palms),55061
+90035,Los Angeles (West Fairfax),26595
+90036,"Los Angeles (Fairfax, Melrose, Miracle Mile, Park La Brea, Wilshire-La Brea)",37713
+90037,Los Angeles (South Los Angeles),69064
+90038,Los Angeles (Hollywood),27979
+90039,"Los Angeles (Atwater Village, Elysian Valley, Silver Lake)",28244
+90040,"Commerce, City of",11839
+90041,Los Angeles (Eagle Rock),28321
+90042,Los Angeles (Highland Park),59151
+90043,"Los Angeles (Hyde Park, View Park, Windsor Hills)",44461
+90044,"Athens, Los Angeles (South Los Angeles)",98990
+90045,"Los Angeles (Los Angeles International Airport, Westchester)",41123
+90046,"Los Angeles (Hollywood), West Hollywood",48170
+90047,Los Angeles (South Los Angeles),52200
+90048,"Los Angeles (Mid-City West), West Hollywood",20411
+90049,"Los Angeles (Bel Air Estates, Brentwood)",35819
+90056,Ladera Heights,8225
+90057,Los Angeles (Westlake),47142
+90058,"Los Angeles (Southeast Los Angeles), Vernon",3049
+90059,"Los Angeles (Southeast Los Angeles, Watts), Willowbrook",39471
+90061,Los Angeles (South Los Angeles),28646
+90062,Los Angeles (South Los Angeles),33528
+90063,"City Terrace, Los Angeles (Boyle Heights)",52008
+90064,"Los Angeles (Cheviot Hills, Rancho Park)",25956
+90065,"Los Angeles (Cypress Park, Glassell Park, Mt Washington)",44897
+90066,"Culver City, Los Angeles (Mar Vista)",54142
+90067,Los Angeles (Century City),2653
+90068,Los Angeles (Hollywood),21064
+90069,"Los Angeles (Hollywood, Melrose), West Hollywood",20045
+90071,"Los Angeles (Downtown Bunker Hill, City West, Historic Core, South Park-North)",313
+90073,Veterans Administration,1014
+90077,"Los Angeles (Bel Air Estates, Beverly Glen)",7868
+90079,"Los Angeles (Downtown Central, Downtown Fashion District)",0
+90089,Los Angeles (University of Southern California),4164
+90094,Los Angeles (Playa Vista),11891
+90095,Los Angeles (University of California Los Angeles),0
+90201,"Bell, Bell Gardens, Cudahy",95134
+90210,Beverly Hills,19180
+90211,Beverly Hills,9208
+90212,Beverly Hills,10881
+90220,"Compton, Rancho Dominguez",49101
+90221,"Compton, East Rancho Dominguez",52119
+90222,"Compton, Rosewood, Willowbrook",33021
+90230,Culver City,32005
+90232,Culver City,16352
+90240,Downey,26026
+90241,Downey,45341
+90242,Downey,41685
+90245,El Segundo,17081
+90247,Gardena,47682
+90248,Gardena,11453
+90249,Gardena,25929
+90250,Hawthorne (Holly Park),96200
+90254,Hermosa Beach,19551
+90255,"Huntington Park, Walnut Park",71654
+90260,Lawndale,33282
+90262,Lynwood,66073
+90263,Malibu (Pepperdine University),1803
+90265,Malibu,16652
+90266,Manhattan Beach,35123
+90270,"Bell, Maywood",24950
+90272,"Los Angeles (Castellemare, Pacific Highlands, Pacific Palisades, Topanga State Park)",21298
+90274,"Palos Verdes Estates, Rolling Hills, Rolling Hills Estates",24942
+90275,"Palos Verdes Estates, Rancho Palos Verdes, Rolling Hills Estates",41941
+90277,"Redondo Beach, Torrance",36339
+90278,"Redondo Beach, Torrance",42536
+90280,South Gate,92262
+90290,Topanga,5300
+90291,Los Angeles (Venice),25656
+90292,"Los Angeles (Marina Peninsula), Marina del Rey",24481
+90293,Los Angeles (Playa del Rey),13039
+90301,Inglewood,37341
+90302,Inglewood,29307
+90303,Inglewood,23370
+90304,"Inglewood, Lennox",25725
+90305,Inglewood,14679
+90401,Santa Monica (Downtown),7480
+90402,Santa Monica,11816
+90403,Santa Monica,24092
+90404,Santa Monica,23975
+90405,"Santa Monica (Ocean Park, Santa Monica Airport, Sunpark)",26981
+90501,Torrance,42536
+90502,"Torrance, West Carson",18430
+90503,Torrance,44280
+90504,Torrance,32965
+90505,Torrance,36214
+90506,Torrance (Camino College),0
+90601,"City of Industry, Whittier",30667
+90602,Whittier,25949
+90603,Whittier,20883
+90604,"East La Mirada, South Whittier,",39795
+90605,"South Whittier, Whittier",41427
+90606,"Los Nietos, West Whittier",31717
+90631,La Habra Heights,69064
+90638,La Mirada,46170
+90640,Montebello,62294
+90639,La Mirada (Biola University),1833
+90650,Norwalk,101983
+90660,Pico Rivera,61561
+90670,Santa Fe Springs,17556
+90701,Artesia,16237
+90703,Cerritos,49334
+90704,"Avalon, Santa Catalina Island, Two Harbors (PO Boxes)",3822
+90706,Bellflower,78352
+90710,Los Angeles (Harbor City),27517
+90712,Lakewood,31552
+90713,Lakewood,28439
+90715,Lakewood,20949
+90716,Hawaiian Gardens,13941
+90717,Lomita,21788
+90723,Paramount,53286
+90731,"Los Angeles (San Pedro, Terminal Island)",63431
+90732,"Los Angeles (San Pedro), Rancho Palos Verdes",22078
+90740,Long Beach (overlaps Orange County),24604
+90744,Los Angeles (Wilmington),54277
+90745,Carson,58735
+90746,Carson,27643
+90747,Carson (California State Univ Dominguez Hills),25
+90755,Signal Hill,11764
+90802,Long Beach,40012
+90803,"Long Beach (Belmont Shore, Marina, Naples)",31659
+90804,Long Beach (East Long Beach),37299
+90805,Long Beach (North Long Beach),96515
+90806,Long Beach,40688
+90807,Long Beach (Bixby Knolls),33153
+90808,Long Beach,39698
+90810,"Carson, Dominguez, Long Beach",36306
+90813,Long Beach,53647
+90814,Long Beach,20723
+90815,Long Beach,42759
+90822,Long Beach,125
+90840,Long Beach  (CSU Long Beach),0
+91001,Altadena,36420
+91006,Arcadia,31986
+91007,Arcadia,33367
+91008,Bradbury,744
+91010,"Azusa, Bradbury, Duarte, Irwindale, Monrovia",26825
+91011,La Cañada Flintridge,20389
+91016,Monrovia,41822
+91020,Montrose,7509
+91024,Sierra Madre,11151
+91030,South Pasadena,26583
+91040,"Los Angeles (Shadow Hills, Sunland)",20911
+91042,Los Angeles (Tujunga),27119
+91046,Glendale (Verdugo City),141
+91101,Pasadena,19737
+91103,Pasadena,27167
+91104,Pasadena,35918
+91105,Pasadena,12692
+91106,Pasadena,23813
+91107,Pasadena,32581
+91108,San Marino,12559
+91125,Pasadena (CalTech),996
+91201,Glendale,22163
+91202,Glendale,22831
+91203,Glendale,16679
+91204,Glendale (Tropico),18445
+91205,Glendale (Tropico),35755
+91206,Glendale,32294
+91207,Glendale,11091
+91208,Glendale,15377
+91210,"Glendale (Glendale Galleria, Americana at Brand)",310
+91214,"Glendale, La Crescenta, Montrose",32344
+91301,"Agoura Hills, Cornell",25244
+91302,"Calabasas, Hidden Hills, Monte Nido",26318
+91303,Los Angeles (Canoga Park),30611
+91304,"Los Angeles (Canoga Park, West Hills), Box Canyon",54369
+91306,Los Angeles (Winnetka),49460
+91307,"Los Angeles (West Hills), Bell Canyon",25368
+91311,Los Angeles (Chatsworth),40196
+91316,Los Angeles (Encino),28497
+91321,Santa Clarita (Newhall),34305
+91324,Los Angeles (Northridge),29744
+91325,Los Angeles (Northridge),35537
+91326,"Los Angeles (Northridge, Porter Ranch)",36503
+91330,Los Angeles (California State Univ Northridge),2699
+91331,"Los Angeles (Arleta, Hansen Hills, Pacoima)",99804
+91335,Los Angeles (Reseda),77158
+91340,"San Fernando, Los Angeles (Mission Hills, Pacoima)",34822
+91342,"Los Angeles (Lake View Terrace, Sylmar), Kagel Canyon",92580
+91343,Los Angeles (North Hills),63193
+91344,Los Angeles (Granada Hills),53862
+91345,Los Angeles (Mission Hills),18481
+91350,"Bouquet Canyon, Green Valley, Mint Canyon, Santa Clarita (Canyon County)",42970
+91351,Santa Clarita (Canyon Country),32677
+91352,"Los Angeles (La Tuna Canyon, Sun Valley)",45601
+91354,Santa Clarita (Valencia),33039
+91355,Santa Clarita (Valencia),30289
+91356,Los Angeles (Tarzana),30599
+91361,Westlake Village,18753
+91362,Westlake Village,36770
+91364,Los Angeles (Woodland Hills),28765
+91367,Los Angeles (Woodland Hills),44862
+91371,"Los Angeles (Pierce College), Calabasas",0
+91381,Stevenson Ranch,20864
+91384,"Castaic, Val Verde",27652
+91387,"Santa Clarita (Canyon Country), Fair Oaks Ranch, Mint Canyon",46812
+91390,"Agua Dulce, Green Valley, Santa Clarita (Saugus)",18930
+91401,"Los Angeles (Valley Glen, Van Nuys)",39179
+91402,Los Angeles (Panorama City),67937
+91403,"Los Angeles (Sherman Oaks, Van Nuys)",25887
+91405,Los Angeles (Valley Glen),55451
+91406,"Los Angeles (Lake Balboa, Van Nuys)",53276
+91411,Los Angeles (Van Nuys),23689
+91423,"Los Angeles (Sherman Oaks, Van Nuys)",31787
+91436,Los Angeles (Encino),16190
+91501,Burbank,18951
+91502,Burbank,12312
+91504,Burbank (Glenoaks),27479
+91505,Burbank,32156
+91506,Burbank,19559
+91601,"Los Angeles (North Hollywood, Toluca Terrace)",35615
+91602,"Los Angeles (North Hollywood, Studio City, Toluca Lake, West Toluca Lake)",19980
+91604,"Los Angeles (North Hollywood, Studio City)",32073
+91605,Los Angeles (North Hollywood),51654
+91606,"Los Angeles (North Hollywood, Valley Glen)",43552
+91607,"Los Angeles (North Hollywood, Sherman Village, Valley Glen, Valley Village)",30734
+91608,Universal City,56
+91702,"Azusa, Irwindale",62196
+91706,"Baldwin Park, Irwindale",72495
+91711,Claremont,37542
+91722,Covina,34470
+91723,Covina,17964
+91724,"Charter Oak, Covina",28575
+91731,El Monte,28201
+91732,El Monte,58888
+91733,"El Monte, South El Monte",42953
+91740,Glendora,27131
+91741,Glendora,26052
+91744,"City of Industry, La Puente, Valinda",79380
+91745,Hacienda Heights,55489
+91746,"Avocado Heights, Bassett, West Puente Valley",29429
+91748,"City of Industry, Rowland Heights",43851
+91750,La Verne,33436
+91754,Monterey Park,33937
+91755,Monterey Park,26418
+91759,Mount Baldy (Portion in LA County),299
+91765,Diamond Bar,45303
+91766,Pomona (Phillips Ranch),69517
+91767,Pomona,50715
+91768,Pomona,35443
+91770,Rosemead,59410
+91773,San Dimas,34066
+91775,San Gabriel,24169
+91776,San Gabriel,37340
+91780,Temple City,35556
+91789,"City of Industry, Diamond Bar, Walnut",41377
+91790,West Covina,44855
+91791,West Covina,33902
+91792,West Covina,31208
+91801,Alhambra,53320
+91803,Alhambra,29006
+93243,"Gorman (L.A. County), Lebec (Kern County)",977
+93510,Acton,7397
+93532,"Elizabeth Lake, Lake Hughes, Leona Valley, Sandberg, Three Points",2768
+93534,Lancaster,42515
+93535,"Hi Vista, Lake Los Angeles, Lancaster, Roosevelt Corner, Wilsona Gardens",80905
+93536,"Del Sur, Fairmont, Lancaster, Metler Valley, Neenach, Quartz Hill",72131
+93543,"Juniper Hills, Littlerock, Sun Village",12745
+93544,"Crystalaire, Llano",1427
+93550,"Lake Los Angeles, Palmdale",81501
+93551,"City Ranch, Leona Valley, Palmdale",54478
+93552,Palmdale,43371
+93553,"Juniper Hills, Pearblossom",1136
+93563,"Pearblossom, Valyermo",222
+93591,"Lake Los Angeles, Palmdale",7340
