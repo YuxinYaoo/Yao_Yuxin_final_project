@@ -101,19 +101,19 @@ st.write('This Streamlit app provides insights into Los Angeles County populatio
 # Add a sidebar for navigation and dataset selection
 st.sidebar.title('Navigation')
 datasets = {
-    'medium income': '/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/csv/la_median_income.csv',
-    'population': '/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/csv/la_population.csv',
-    'coffee shops': '/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/csv/yelp_coffee_los_angeles.csv',
-    'stadiums': '/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/csv/yelp_stadium_los_angeles.csv',
-    'trader joes': '/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/csv/trader_joes_locations.csv',
-    'house price': '/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/csv/ca_house_price.csv',
-    'zip code': '/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/csv/lazip.csv',
-    'final data': '/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/csv/final_data.csv'
+    'medium income': 'la_median_income.csv',
+    'population': 'la_population.csv',
+    'coffee shops': 'yelp_coffee_los_angeles.csv',
+    'stadiums': 'yelp_stadium_los_angeles.csv',
+    'trader joes': 'trader_joes_locations.csv',
+    'house price': 'ca_house_price.csv',
+    'zip code': 'lazip.csv',
+    'final data': 'final_data.csv'
 }
 selected_dataset_name = st.sidebar.selectbox('Select a dataset to explore:', list(datasets.keys()))
 selected_dataset_path = datasets[selected_dataset_name]
 df = pd.read_csv(selected_dataset_path)
-finaldf = pd.read_csv('/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/csv/final_data.csv')
+finaldf = pd.read_csv('final_data.csv')
 
 # Navigation using radio buttons in sidebar
 navigation = st.sidebar.radio('Go to:', ['Home', 'Final Data Statistics', 'Data Header', 'Top 10 in LA', 'Correlation Analysis', 'Map'])
