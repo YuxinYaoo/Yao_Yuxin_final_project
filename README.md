@@ -34,6 +34,10 @@ This project aims to explore the interrelations between local amenities such as 
 - **Data Integration**: Merge datasets based on zip code to form a unified database for analysis.
 - **Data Analysis**: Employ statistical search by zip code, see each data set's information by searching the zip code, and provide a map visualization, which shows the selected attributes by ZIP code on an interactive map of Los Angeles County.
 
+## How to Use this Repository
+- final.py is the streamlit code.
+- main.py is data cleaning and merging data code.
+
 ## Expected Findings
 We anticipate that zip codes with higher incomes and larger populations might show a higher density of amenities and correspondingly higher housing prices. These insights could be valuable for potential home buyers, real estate agents, and urban planners.
 
