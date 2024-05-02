@@ -11,15 +11,45 @@ from shapely.geometry import Point
 import contextily as ctx
 from pyproj import Transformer
 
+# Load data as global variables
+finaldf = pd.read_csv('final_data.csv')
+datasets = {
+    'medium income': 'la_median_income.csv',
+    'population': 'la_population.csv',
+    'coffee shops': 'yelp_coffee_los_angeles.csv',
+    'stadiums': 'yelp_stadium_los_angeles.csv',
+    'trader joes': 'trader_joes_locations.csv',
+    'house price': 'ca_house_price.csv',
+    'zip code': 'lazip.csv',
+    'final data': 'final_data.csv'
+}
 
-# Define the header function to display the first few rows of the dataset
-def header(df, dataset_name):
-    st.header(f'Data Header for {dataset_name}:')
-    st.write(df.head())
+def header():
+    st.header('Data Header by ZIP code:')
+    # Select a dataset to explore
+    selected_dataset_name = st.selectbox('Select a dataset to explore:', list(datasets.keys()), key='header_select_dataset')
+    selected_dataset_path = datasets[selected_dataset_name]
+    df = pd.read_csv(selected_dataset_path)
+
+    zip_code = st.text_input("Enter ZIP code to filter:", key='header_zip_code')
+    if zip_code:
+        try:
+            zip_code = int(zip_code)
+            df_filtered = df[df['zip_code'] == zip_code]
+            if not df_filtered.empty:
+                st.write(df_filtered)
+            else:
+                st.write("No data found for this ZIP code.")
+        except ValueError:
+            st.error("Please enter a valid ZIP code.")
+    else:
+        st.write(df.head())
+
 
 def interactive_plot(finaldf):
     # List of specific columns that are necessary for the scatter plot 
     allowed_columns = ['population', 'median_income', 'median_unit_price', 'num_traderjoes', 'num_stadiums', 'num_coffee']
+
 
     # Filter dataframe to include only the allowed columns for safety
     plot_columns = [col for col in allowed_columns if col in finaldf.columns]
@@ -32,6 +62,7 @@ def interactive_plot(finaldf):
     # Selectboxes for choosing columns for the x and y axes
     x_axis_val = st.selectbox('Select X-axis variable:', plot_columns)
     y_axis_val = st.selectbox('Select Y-axis variable:', plot_columns)
+
 
     # Handling potential NaN values or infinite values which can disrupt correlation computation
     if finaldf[x_axis_val].isnull().any() or finaldf[y_axis_val].isnull().any():
@@ -96,37 +127,38 @@ def display_map(finaldf):
 
 # Main title and introduction
 st.title('Los Angeles County Information')   
+st.write('Yuxin Yao usc id: 9109746606')
 st.write('This Streamlit app provides insights into Los Angeles County population, median income, coffee shops, stadiums, Trader Joe’s, and house prices.')
 
 # Add a sidebar for navigation and dataset selection
 st.sidebar.title('Navigation')
-datasets = {
-    'medium income': 'la_median_income.csv',
-    'population': 'la_population.csv',
-    'coffee shops': 'yelp_coffee_los_angeles.csv',
-    'stadiums': 'yelp_stadium_los_angeles.csv',
-    'trader joes': 'trader_joes_locations.csv',
-    'house price': 'ca_house_price.csv',
-    'zip code': 'lazip.csv',
-    'final data': 'final_data.csv'
-}
-selected_dataset_name = st.sidebar.selectbox('Select a dataset to explore:', list(datasets.keys()))
-selected_dataset_path = datasets[selected_dataset_name]
-df = pd.read_csv(selected_dataset_path)
-finaldf = pd.read_csv('final_data.csv')
+
 
 # Navigation using radio buttons in sidebar
-navigation = st.sidebar.radio('Go to:', ['Home', 'Final Data Statistics', 'Data Header', 'Top 10 in LA', 'Correlation Analysis', 'Map'])
+navigation = st.sidebar.radio('Go to:', ['Home', 'Final Data Statistics', 'Data Header', 'Correlation Analysis', 'Map'])
 
 # Display based on sidebar navigation
-if navigation == 'Final Data Statistics':
+if navigation == 'Home':
+    st.write('An explanation of how to use your webapp:')
+    st.write('This web application allows users to explore datasets related to Los Angeles County. Users can select a dataset from the sidebar, search for data corresponding to ZIP codes within the dataset, and identify which ZIP code has the highest frequency or the largest values across Los Angeles County. The application provides a map visualization, which shows the selected attributes by ZIP code on an interactive map of Los Angeles County. Additionally, I have performed statistical analyses and correlation analyses on the data for the entire Los Angeles County. The correlation analysis provides a scatter plot of two selected variables, along with the correlation coefficient and R-squared value.')
+    st.write('Any major “gotchas”: ')
+    st.write('There is not something that can not work or work slow. However, the Trader Joes dataset obtained through web scraping is small and insufficient for in-depth data analysis.')
+    st.write('What did you set out to study?')
+    st.write('I have gathered data on the population of Los Angeles County, median household income, and the current median price per square inch of houses on sale, as well as information on coffee shops, stadiums, and Trader Joes stores. I aim to study their interrelations, particularly their impact on housing prices. Initially, for Milestone 1, I only planned to collect data on Trader Joes, stadiums, and the current median prices per square meter of houses, but I found this to be insufficient for comprehensive analysis. I realized that median household income is likely more influential on housing prices, while population more likely affects the distribution of shops and stadiums. Therefore, I have also scraped data on population and household income for each ZIP code from the Los Angeles Almanac website. Additionally, as a coffee enthusiast, I used the Yelp API to gather data on coffee shops in Los Angeles County.')
+    st.write('What did you Discover?')
+    st.write('After researching, I discovered a relatively strong correlation between median household income and median price per square inch of houses on sale, with a correlation coefficient of 0.61, which aligns with my hypothesis. Besides, the median price per square inch of houses on sale did not show significant relationships with other variables. Additionally, the relationship between population and amenities such as coffee shops, supermarkets, and stadiums was not as evident as expected. Typically, in more economically developed areas with larger populations, these conveniences and entertainment facilities should be more prevalent. I suspect that the lack of significant relationships may be due to the small number of supermarkets, stadiums, and coffee shops per ZIP code.')
+    st.write('What difficulties did you have in completing the project?')
+    st.write('My biggest technical challenge was collecting data from the Yelp API because searching directly for Los Angeles County in the Yelp API parameters did not yield complete data. Therefore, I chose to search by ZIP code. I wrote a for loop to iterate through all the ZIP codes in Los Angeles County, which ultimately provided the results I wanted. As mentioned, the greatest difficulty in my research was that the datasets I found were too sparse when broken down by individual ZIP codes, which might lead to less accurate research results.')
+    st.write('What skills did you wish you had while you were doing the project?')
+    st.write('I want to do further text analysis, so I hope I can strengthen my natural language processing skills and apply them to my project next.')
+    st.write('What would you do “next” to expand or augment the project?')
+    st.write('I can further analyze the coffee shop and stadium dataset, for example, I can scrape the reviews of coffee shop and stadium on yelp and further do text analysis to get the high frequency word cloud to present to streamlit, also we can do sentiment analysis, we can get the information that the merchant may not provide by doing the text analysis of the reviews, such as whether it is convenient to park or not, and the service attitude. This can help us make better decisions. To summarize, I hope I can strengthen my natural language processing skills and apply them to my projects in the next step.')
+             
+elif navigation == 'Final Data Statistics':
     st.write('Los Angeles County Final Data Statistics:')
     st.write(finaldf[["population", "median_income", "median_unit_price", "num_traderjoes", "num_stadiums", "num_coffee"]].describe())
 elif navigation == 'Data Header':
-    header(df, selected_dataset_name)
-elif navigation == 'Top 10 in LA':
-    st.write(f'Top 10 in Los Angeles County for {selected_dataset_name}:')
-    st.write(df.head(10))
+    header()
 elif navigation == 'Correlation Analysis':
     interactive_plot(finaldf)
 elif navigation == 'Map':
