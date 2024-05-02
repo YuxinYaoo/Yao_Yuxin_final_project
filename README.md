@@ -1,6 +1,6 @@
 # Yao_Yuxin_final_project
 * DATA SOURCE
-  DATA SOURCE 1:
+DATA SOURCE 1:
 URL for website or API: 
 https://locations.traderjoes.com/ca/
 This web page provides a comprehensive list of Trader Joe's store locations throughout California, categorized by city and including details such as store address, zip code, and contact information. 
@@ -30,7 +30,10 @@ http://api.zippopotam.us/
 A Zip Code api to get Zip Code details including zip-code, place name, longitude, state, state abbreviation, latitude.
 
 
-* describe how you might combine these datasets:
+* Describe how you might combine these datasets:
+  I plan to combine these datasets by zip code. All three datasets contain the zip code.  They can tell the relationship between house prices, Trader Joe’s, stadiums, coffee shops, median income, population, and zip-code details.
   
+
+
 
 
