@@ -1,39 +1,59 @@
 # Yao_Yuxin_final_project
-DATA SOURCE 1:
-URL for website or API: 
-https://locations.traderjoes.com/ca/
-This web page provides a comprehensive list of Trader Joe's store locations throughout California, categorized by city and including details such as store address, zip code, and contact information. 
+# Analysis of Housing Prices, Median Income, Population and Local Amenities in Los Angeles County
 
-DATA SOURCE 2:
-URL for website or API: 
-(If API, link to API docs):
-https://docs.developer.yelp.com/docs/fusion-intro
-Stadiums & Arenas
-coffee shops
-Yelp's Fusion API grants access to a wealth of information about local businesses, including stadiums and coffee shops within California. This API provides detailed data, including business names, addresses, zip codes, user ratings, and reviews. 
+## Project Overview
+This project aims to explore the interrelations between local amenities such as Trader Joe's stores, coffee shops, and stadiums, and housing prices across various zip codes in California. By analyzing data from multiple sources, we hope to determine how factors like median household income and population density impact housing markets.
 
-DATA SOURCE 3:
-https://www.kaggle.com/datasets/ahmedshahriarsakib/usa-real-estate-dataset/data
-This dataset contains Real Estate listings in the US broken by State and zip code. It was originally from https://www.realtor.com/. As of 2024, it is the second most visited real estate listing website in the United States, with over 100 million monthly active users. it includes vital details like property prices, types, sizes, and the number of bedrooms and bathrooms. 
+## Data Sources
+1. **Trader Joe's Locations**  
+   - **Source**: [Trader Joe's Store Locations](https://locations.traderjoes.com/ca/)  
+   - **Description**: List of all Trader Joe's store locations in California including addresses and contact information.
 
-DATA SOURCE 4:
-https://www.laalmanac.com/employment/em12c.php
-2022 Median Household Income by Zip Code Los Angeles County
+2. **Yelp Fusion API**  
+   - **Documentation**: [Yelp Developer Docs](https://docs.developer.yelp.com/docs/fusion-intro)  
+   - **Description**: Data on local businesses including stadiums and coffee shops in California, with details such as user ratings and reviews.
 
-DATA SOURCE 5:
-https://www.laalmanac.com/population/po03z.php
-2022 General Population by Zip Code Los Angeles County
+3. **USA Real Estate Dataset**  
+   - **Source**: [Kaggle Dataset by Ahmed Shahriar Sakib](https://www.kaggle.com/datasets/ahmedshahriarsakib/usa-real-estate-dataset/data)  
+   - **Description**: Real estate listings in the US with detailed information on property prices, types, sizes, and more.
 
-DATA SOURCE 6:
-http://api.zippopotam.us/
-A Zip Code api to get Zip Code details including zip-code, place name, longitude, state, state abbreviation, latitude.
+4. **Los Angeles County Income Data**  
+   - **Source**: [LA Almanac - Income by Zip Code](https://www.laalmanac.com/employment/em12c.php)  
+   - **Description**: 2022 median household income data by zip code for Los Angeles County.
 
+5. **Los Angeles County Population Data**  
+   - **Source**: [LA Almanac - Population by Zip Code](https://www.laalmanac.com/population/po03z.php)  
+   - **Description**: 2022 general population figures by zip code for Los Angeles County.
 
-* Describe how you might combine these datasets:
-  I plan to combine these datasets by zip code. All three datasets contain the zip code.  They can tell the relationship between house prices, Trader Joe’s, stadiums, coffee shops, median income, population, and zip-code details.
+6. **Zippopotam.us API**  
+   - **Source**: [Zippopotam.us](http://api.zippopotam.us/)  
+   - **Description**: API providing details on zip codes including place names, longitude, latitude, and more.
 
-* Briefly describe what you might hope to find in the data overall:
-  Through this project, I have gathered data on the population of Los Angeles County, median household income, and the current median price per square inch of houses on sale, as well as information on coffee shops, stadiums, and Trader Joe's stores. I aim to study their interrelations, particularly their impact on housing prices. I hope to find that zip codes with higher household incomes will have more population, supermarkets, stadiums, coffee shops, and higher house prices.
+## Objectives
+- **Primary Objective**: To study how the presence of amenities like supermarkets, stadiums, and coffee shops correlates with housing prices.
+- **Secondary Objective**: To understand the influence of median household income and population density on the housing market.
+
+## Methodology
+- **Data Collection**: Utilize APIs and datasets to gather comprehensive data by zip code.
+- **Data Integration**: Merge datasets based on zip code to form a unified database for analysis.
+- **Data Analysis**: Employ statistical and machine learning methods to identify trends and correlations.
+
+## Expected Findings
+We anticipate that zip codes with higher incomes and larger populations might show a higher density of amenities and correspondingly higher housing prices. These insights could be valuable for potential home buyers, real estate agents, and urban planners.
+
+## How to Use this Repository
+- **Installation**: Instructions on setting up your local environment to run the analysis.
+- **Running Analysis**: Step-by-step guide to execute the scripts and reproduce findings.
+- **Contributing**: Guidelines for contributing to this project.
+
+## License
+Specify the license under which this project is available, such as MIT, GPL, etc.
+
+## Authors
+- **Your Name**
+
+## Acknowledgments
+- Credit any contributors or sources that assisted in the data collection and analysis.
 
 
 
