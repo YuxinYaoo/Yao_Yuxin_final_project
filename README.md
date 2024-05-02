@@ -1,5 +1,4 @@
 # Yao_Yuxin_final_project
-* DATA SOURCE
 DATA SOURCE 1:
 URL for website or API: 
 https://locations.traderjoes.com/ca/
@@ -32,8 +31,9 @@ A Zip Code api to get Zip Code details including zip-code, place name, longitude
 
 * Describe how you might combine these datasets:
   I plan to combine these datasets by zip code. All three datasets contain the zip code.  They can tell the relationship between house prices, Trader Joe’s, stadiums, coffee shops, median income, population, and zip-code details.
-  
 
+* Briefly describe what you might hope to find in the data overall:
+  Through this project, I have gathered data on the population of Los Angeles County, median household income, and the current median price per square inch of houses on sale, as well as information on coffee shops, stadiums, and Trader Joe's stores. I aim to study their interrelations, particularly their impact on housing prices. I hope to find that zip codes with higher household incomes will have more population, supermarkets, stadiums, coffee shops, and higher house prices.
 
 
 
