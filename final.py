@@ -150,21 +150,6 @@ if navigation == 'Home':
     
     ## Any major “gotchas”:
     The data scraped from Yelp API costs about 2 minutes, which is a little slow. And Yelp API has a limit of 300 requirements per day.
-
-    ## What did you set out to study?
-    I have gathered data on the population of Los Angeles County, median household income, and the current median price per square inch of houses on sale, as well as information on coffee shops, stadiums, and Trader Joe's stores. I aim to study their interrelations, particularly their impact on housing prices. Initially, for Milestone 1, I only planned to collect data on Trader Joe's, stadiums, and the current median prices per square meter of houses, but I found this to be insufficient for comprehensive analysis. I realized that median household income is likely more influential on housing prices, while population more likely affects the distribution of shops and stadiums. Therefore, I have also scraped data on population and household income for each ZIP code from the Los Angeles Almanac website. Additionally, as a coffee enthusiast, I used the Yelp API to gather data on coffee shops in Los Angeles County.
-
-    ## What did you discover?
-    After researching, I discovered a relatively strong correlation between median household income and median price per square inch of houses on sale, with a correlation coefficient of 0.61, which aligns with my hypothesis. Besides, the median price per square inch of houses on sale did not show significant relationships with other variables. Additionally, the relationship between population and amenities such as coffee shops, supermarkets, and stadiums was not as evident as expected. Typically, in more economically developed areas with larger populations, these conveniences and entertainment facilities should be more prevalent. I suspect that the lack of significant relationships may be due to the small number of supermarkets, stadiums, and coffee shops per ZIP code.
-
-    ## What difficulties did you have in completing the project?
-    My biggest technical challenge was collecting data from the Yelp API because searching directly for Los Angeles County in the Yelp API parameters did not yield complete data. Therefore, I chose to search by ZIP code. I wrote a for loop to iterate through all the ZIP codes in Los Angeles County, which ultimately provided the results I wanted. As mentioned, the greatest difficulty in my research was that the datasets I found were too sparse when broken down by individual ZIP codes, which might lead to less accurate research results.
-
-    ## What skills did you wish you had while you were doing the project?
-    I want to do further text analysis, so I hope I can strengthen my natural language processing skills and apply them to my project next.
-
-    ## What would you do “next” to expand or augment the project?
-    I can further analyze the coffee shop and stadium dataset, for example, I can scrape the reviews of coffee shops and stadiums on Yelp and further do text analysis to get the high-frequency word cloud to present to Streamlit. Also, we can do sentiment analysis, we can get the information that the merchant may not provide by doing the text analysis of the reviews, such as whether it is convenient to park or not, and the service attitude. This can help us make better decisions. To summarize, I hope I can strengthen my natural language processing skills and apply them to my projects in the next step.
     """)
     with tab2:
         st.markdown("""
