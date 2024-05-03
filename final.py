@@ -142,9 +142,10 @@ if navigation == 'Home':
     st.markdown("""
     ## An explanation of how to use your webapp:
     This web application allows users to explore datasets related to Los Angeles County. Users can select from the sidebar to navigate to different pages, including the homepage, statistical analysis of the final data, data header, correlation analysis, and maps. On the data header page, I have set interactive options for selecting datasets and entering zip codes. By default, the first five rows of the dataset are displayed when no zip code is entered. If a zip code is entered, the data corresponding to that zip code in the dataset will be shown. On the correlation analysis page, users can display scatter plots, as well as correlation coefficients and R-squared values by choosing variables for the x and y axes. The map visualization page also has interactive options for selecting datasets, which can be used to display the distribution of quantity or size of the selected dataset on a map of Los Angeles County.
-
+    There is a relatively strong strong correlation between median household income and median house prices. However, there is no significant relationship between the other datasets.
+    
     ## Any major “gotchas”:
-    There is not something that cannot work or work slowly. However, the Trader Joe's dataset obtained through web scraping is small and insufficient for in-depth data analysis.
+    The data scraped from Yelp API costs about 2 minutes, which is a little slow. 
 
     ## What did you set out to study?
     I have gathered data on the population of Los Angeles County, median household income, and the current median price per square inch of houses on sale, as well as information on coffee shops, stadiums, and Trader Joe's stores. I aim to study their interrelations, particularly their impact on housing prices. Initially, for Milestone 1, I only planned to collect data on Trader Joe's, stadiums, and the current median prices per square meter of houses, but I found this to be insufficient for comprehensive analysis. I realized that median household income is likely more influential on housing prices, while population more likely affects the distribution of shops and stadiums. Therefore, I have also scraped data on population and household income for each ZIP code from the Los Angeles Almanac website. Additionally, as a coffee enthusiast, I used the Yelp API to gather data on coffee shops in Los Angeles County.
