@@ -139,7 +139,11 @@ navigation = st.sidebar.radio('Go to:', ['Home', 'Final Data Statistics', 'Data 
 
 # Display based on sidebar navigation
 if navigation == 'Home':
-    st.markdown("""
+    # Using tabs within the Home section
+    tab1, tab2 = st.tabs(["Main Page", "Dataset Description"])
+
+    with tab1:
+        st.markdown("""
     ## An explanation of how to use your webapp:
     This web application allows users to explore datasets related to Los Angeles County. Users can select from the sidebar to navigate to different pages, including the homepage, statistical analysis of the final data, data header, correlation analysis, and maps. On the data header page, I have set interactive options for selecting datasets and entering zip codes. By default, the first five rows of the dataset are displayed when no zip code is entered. If a zip code is entered, the data corresponding to that zip code in the dataset will be shown. On the correlation analysis page, users can display scatter plots, as well as correlation coefficients and R-squared values by choosing variables for the x and y axes. The map visualization page also has interactive options for selecting datasets, which can be used to display the distribution of quantity or size of the selected dataset on a map of Los Angeles County.
     There is a relatively strong strong correlation between median household income and median house prices. However, there is no significant relationship between the other datasets.
@@ -162,6 +166,17 @@ if navigation == 'Home':
     ## What would you do “next” to expand or augment the project?
     I can further analyze the coffee shop and stadium dataset, for example, I can scrape the reviews of coffee shops and stadiums on Yelp and further do text analysis to get the high-frequency word cloud to present to Streamlit. Also, we can do sentiment analysis, we can get the information that the merchant may not provide by doing the text analysis of the reviews, such as whether it is convenient to park or not, and the service attitude. This can help us make better decisions. To summarize, I hope I can strengthen my natural language processing skills and apply them to my projects in the next step.
     """)
+    with tab2:
+        st.subheader("Dataset Description")
+        st.markdown("""
+        Detailed descriptions of the datasets used in this analysis are as follows:
+        - **Population**: Demographic data from US Census Bureau.
+        - **Median Income**: Income data sourced from local government databases.
+        - **Coffee Shops**: Data scraped from Yelp.
+        - **Stadiums**: Locations and information about major stadiums, also from Yelp.
+        - **Trader Joe's Locations**: List of all Trader Joe's locations in Los Angeles County.
+        - **House Prices**: Current housing market prices across various ZIP codes.
+        """)
     
 elif navigation == 'Final Data Statistics':
     st.write('Los Angeles County Final Data Statistics:')
