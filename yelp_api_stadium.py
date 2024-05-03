@@ -4,7 +4,7 @@ import pandas as pd
 
 
 # import the zip code data(los angeles county)
-df_la = pd.read_csv('/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/la_population.csv')
+df_la = pd.read_csv('la_population.csv')
 la_zip = df_la['zip_code']
 
 # Define API Key and header
@@ -22,7 +22,7 @@ def get_businesses(zip_code):
     response = requests.get(url=BUSINESS_PATH, params=PARAMETERS, headers=HEADERS)
     return response.json()
 
-# Iterate over the first los angeles zip codes and collect the results
+# Iterate over the first Los Angeles zip codes and collect the results
 all_businesses = []
 for zip_code in la_zip:
     business_data = get_businesses(zip_code)
@@ -35,4 +35,4 @@ df_businesses_la = df_businesses_la.drop(['attributes.business_temp_closed', 'lo
 df_businesses_la = df_businesses_la.rename(columns={'id': 'stadium_id', 'name': 'stadium_name', 'location.zip_code': 'zip_code', 'location.display_address': 'stadium_address'})
 print(df_businesses_la.head())
 
-df_businesses_la.to_csv('/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/yelp_stadium_los_angeles.csv', index=False)
+df_businesses_la.to_csv('yelp_stadium_los_angeles.csv', index=False)
