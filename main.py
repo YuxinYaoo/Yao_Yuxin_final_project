@@ -32,7 +32,7 @@ coffee['zip_code'] = coffee['zip_code'].astype(int)
 # save the cleaned data
 coffee.to_csv('yelp_coffee_los_angeles.csv', index=False)
 traderjoes['zip_code'] = traderjoes['zip_code'].astype(int)
-traderjoes.to_csv('/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/csv/trader_joes_locations.csv', index=False)
+traderjoes.to_csv('trader_joes_locations.csv', index=False)
 
 # get the median unit price of each zipcode
 median_unit_price = houseprices.groupby('zip_code')['unit_price'].median().reset_index()
