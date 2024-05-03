@@ -167,7 +167,6 @@ if navigation == 'Home':
     I can further analyze the coffee shop and stadium dataset, for example, I can scrape the reviews of coffee shops and stadiums on Yelp and further do text analysis to get the high-frequency word cloud to present to Streamlit. Also, we can do sentiment analysis, we can get the information that the merchant may not provide by doing the text analysis of the reviews, such as whether it is convenient to park or not, and the service attitude. This can help us make better decisions. To summarize, I hope I can strengthen my natural language processing skills and apply them to my projects in the next step.
     """)
     with tab2:
-        st.subheader("Dataset Description")
         st.markdown("""
         ## Project Overview
 This project aims to explore the interrelations between local amenities such as Trader Joe's stores, coffee shops, stadiums, and housing prices across various zip codes in California. By analyzing data from multiple sources, we hope to determine how factors like median household income and population density impact housing markets.
