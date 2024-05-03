@@ -1,6 +1,9 @@
 # Yao_Yuxin_final_project
 # Analysis of Housing Prices, Median Income, Population and Local Amenities in Los Angeles County
 
+## Streamlit URL：
+https://yaoyuxinfinalproject-mzjvl8qo8aug8pnvsvrprf.streamlit.app/
+
 ## Project Overview
 This project aims to explore the interrelations between local amenities such as Trader Joe's stores, coffee shops, stadiums, and housing prices across various zip codes in California. By analyzing data from multiple sources, we hope to determine how factors like median household income and population density impact housing markets.
 
