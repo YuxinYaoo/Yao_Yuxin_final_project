@@ -67,7 +67,7 @@ df = df.rename(columns={'post code': 'zip_code', 'place name': 'city'})
 df = df.drop(columns=['country', 'country abbreviation', 'city', 'state', 'state abbreviation']) 
 print(df.head())
 
-df.to_csv('/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/cazip.csv', index=False)
+df.to_csv('cazip.csv', index=False)
 
 
 
