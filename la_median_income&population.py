@@ -42,7 +42,7 @@ df['median_income'] = df['median_income'].str.replace('$', '')
 df['median_income'] = df['median_income'].str.replace(',', '')
 df['median_income'] = df['median_income'].astype(int)
 df
-df.to_csv('/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/la_median_income.csv', index=False)
+df.to_csv('la_median_income.csv', index=False)
 
 
 # URL of the website to scrape
@@ -78,4 +78,4 @@ df['zip_code'] = df['zip_code'].astype(int)
 df['population'] = df['population'].str.replace(',', '').astype(int)
 print(df)
 
-df.to_csv('/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/la_population.csv', index=False)
+df.to_csv('la_population.csv', index=False)
