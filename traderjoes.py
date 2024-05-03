@@ -74,6 +74,7 @@ df = pd.DataFrame(all_addresses)
 df['store_number'] = df['store_name'].str.extract(r'(\d+)')
 df['store_name'] = df['store_name'].str.replace(r'\s*\(\d+\)', '').str.strip()  
 df = df.drop(columns=['city'])
+df['zip_code'] = df['zip_code'].astype(int)
 df
 df.to_csv('trader_joes_locations.csv', index=False)
 
