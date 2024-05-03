@@ -1,7 +1,7 @@
 import pandas as pd
 
 # import whole dataset
-whole_df = pd.read_csv('/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/csv/realtor-data.zip.csv')
+whole_df = pd.read_csv('realtor-data.zip.csv')
 print(whole_df.head())
 
 # get california df
@@ -41,6 +41,6 @@ df = df.rename(columns={'id': 'house_id', 'street': 'house_street'})
 print(df.head())
 
 # save cleaned data to csv
-df.to_csv('/Users/yaoyuxin/Desktop/DSCI510/Yao_Yuxin_proj3/ca_house_price.csv', index=False)
+df.to_csv('ca_house_price.csv', index=False)
 
 
