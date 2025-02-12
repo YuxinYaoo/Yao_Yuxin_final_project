@@ -1,4 +1,3 @@
-# Yao_Yuxin_final_project
 # Analysis of Housing Prices, Median Income, Population and Local Amenities in Los Angeles County
 
 ## Streamlit URL：
